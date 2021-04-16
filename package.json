@@ -1,0 +1,26 @@
+{
+  "name": "steppin-out-band",
+  "version": "1.0.0",
+  "description": "A website built for the band Steppin' Out.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"gatsby develop\""
+  },
+  "author": "Justin Taylor Slocum",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "v12.14.1"
+  }
+}
