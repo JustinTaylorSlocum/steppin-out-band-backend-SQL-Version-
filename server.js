@@ -5,6 +5,8 @@ const mysql = require('mysql');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+let port = process.env.PORT || 3000;
+
 // Routers
 const postsRouter = require('./routes/newsPosts');
 const gigsRouter = require('./routes/gigEvents');
@@ -29,6 +31,6 @@ app.use(express.urlencoded({extended: true})) // parsing incoming requests with 
 app.use('/posts', postsRouter);
 app.use('/gigs', gigsRouter);
 
-app.listen(4000, () => {
+app.listen(port, () => {
     console.log("Server started on port 4000");
 });
